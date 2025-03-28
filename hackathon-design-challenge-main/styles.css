@@ -1,0 +1,241 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f5f7;
+  color: #07301e;
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #07301e;
+}
+
+.logo img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #07301e;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a[aria-label="Home"] {
+  color: #2bb90a;
+  font-weight: bold;
+}
+
+.sign-in-btn {
+  background-color: #2bb90a;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-btn:hover {
+  background-color: #07301e;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: #f4f5f7;
+  border-radius: 20px;
+  margin: 20px 40px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text .tag {
+  color: #2bb90a;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.cta-buttons .get-started,
+.wealth-text .get-started {
+  background-color: #2bb90a;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-buttons .get-started:hover,
+.wealth-text .get-started:hover {
+  background-color: #07301e;
+}
+
+.cta-buttons .learn-more {
+  background-color: transparent;
+  color: #07301e;
+  padding: 15px 30px;
+  border: 2px solid #07301e;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-buttons .learn-more:hover {
+  background-color: #07301e;
+  color: #ffffff;
+}
+
+.trial-text {
+  color: #2bb90a;
+  margin-top: 10px;
+}
+
+.hero-image img,
+.wealth-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Awards Section */
+.awards {
+  background-color: #07301e;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px;
+  margin: 20px 40px;
+  border-radius: 20px;
+}
+
+.awards h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.awards-logos {
+  display: flex;
+  gap: 130px;
+}
+
+.awards-logos img {
+  height: 40px;
+  width: auto;
+}
+
+/* Wealth Section */
+.wealth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 40px;
+  background-color: #f4f5f7;
+  border-radius: 20px;
+  margin: 20px 40px;
+}
+
+.wealth-text {
+  max-width: 50%;
+}
+
+.wealth-text .tag {
+  color: #2bb90a;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.wealth-text h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.features {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.feature {
+  flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero,
+  .wealth {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .hero-text,
+  .wealth-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
